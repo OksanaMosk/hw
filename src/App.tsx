@@ -4,7 +4,7 @@ import {CoursesComponent} from "./components/CoursesComponent.tsx";
 function App() {
 
     return (
-        <><CoursesComponent/></>
+        <div className="flex justify-center self-center"><CoursesComponent/></div>
     )
 }
 
