@@ -8,7 +8,7 @@ type PropsType={
 export const CourseComponent:FC<PropsType>=({course}) => {
     return (
 
-<li>{course.title} {course.monthDuration}</li>
+<li className="text-green-600  hover:text-gray-800 cursor-pointer transition duration-200 ease-in-out">{course.title} - Duration {course.monthDuration} months</li>
 
     );
 };
