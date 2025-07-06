@@ -3,26 +3,27 @@
     "browser": true,
     "es2021": true
   },
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2021,
-    "sourceType": "module"
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
+  "plugins": ["react", "prettier", "@typescript-eslint"],
   "extends": [
     "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": [
-    "prettier"
-  ],
   "rules": {
-    "prettier/prettier": "error",
-    "no-multiple-empty-lines": [
-      "error",
-      {
-        "max": 1,
-        "maxEOF": 0,
-        "maxBOF": 0
-      }
-    ]
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
