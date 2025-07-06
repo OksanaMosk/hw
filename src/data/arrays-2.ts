@@ -1,5 +1,5 @@
 
-export  const coursesArray = [
+export const coursesArray = [
     {
         title: 'JavaScript Complex',
         monthDuration: 5,
