@@ -1,9 +1,10 @@
-import './App.css'
+import {CoursesComponent} from "./Components/CoursesComponent.tsx";
+
 
 function App() {
 
     return (
-        <></>
+        <><CoursesComponent/></>
     )
 }
 
