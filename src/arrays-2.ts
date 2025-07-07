@@ -1,4 +1,4 @@
-import {ICourseModal} from './Models/CourseModal.tsx';
+import {ICourseModal} from './models/CourseModal.tsx';
 
 export const coursesAndDurationArray: ICourseModal[] = [
     {title: 'JavaScript Complex', monthDuration: 5},

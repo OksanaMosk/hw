@@ -1,5 +1,5 @@
 import  {FC} from 'react';
-import {ICourseModal} from "../Models/CourseModal.ts";
+import {ICourseModal} from "../models/CourseModal.ts";
 
 type PropsType={
     course:ICourseModal

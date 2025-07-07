@@ -1,7 +1,7 @@
 
 import {coursesAndDurationArray} from '../arrays-2'
-import {ICourseModal} from "../Models/CourseModal.tsx"
-import {CourseComponent} from "./CourseComponent.tsx"
+import {ICourseModal} from "../models/CourseModal.tsx"
+import {CourseComponent} from "./CourseComponent"
 
 export const CoursesComponent = () => {
     return (
