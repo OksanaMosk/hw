@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { loadAll } from '../../services/api_service.ts';
-import { IUser } from '../models/IUser.ts';
+import { IUser } from '../../models/IUser.ts';
 import { UserComponents } from './UserComponents.tsx';
-import { IBase } from '../models/IBase.ts';
+import { IBase } from '../../models/IBase.ts';
 
 export const UsersComponents = () => {
   const[users, setUsers] = useState<IUser[]>([]);

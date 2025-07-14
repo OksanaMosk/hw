@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ICompany} from "../models/IUser.ts";
+import {ICompany} from "../../models/IUser.ts";
 
 type CompanyProps = {
   company: ICompany;

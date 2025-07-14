@@ -1,4 +1,4 @@
-import { IUser } from '../models/IUser.ts';
+import { IUser } from '../../models/IUser.ts';
 import { FC } from 'react';
 import { CompanyComponent } from './CompanyComponent.tsx';
 import { BankComponent } from './BankComponent.tsx';
@@ -12,7 +12,7 @@ type UserProps = {
 export const UserComponents:FC<UserProps> = ({user}) => {
   const  navigation=useNavigate()
   const onButtonClickNavigate=()=>{
-    navigation('/users/' + id + '/carts')
+    navigation(`/users/${id}/carts`)
   }
 
   const {  id,
@@ -44,11 +44,12 @@ export const UserComponents:FC<UserProps> = ({user}) => {
     crypto,
     role}=user
 
+  const formattedBirthDate = new Date(birthDate).toLocaleDateString('en-GB'); // Формат DD/MM/YYYY
 
 
   return (
     <li
-      className=" flex flex-col w-[800px] gap-3 text-[#404214] box-border bg-[#eef0d3]  border-[4px] border-white hover:text-[#ffffff] hover:bg-[#bab977] p-7 shadow-xl rounded-xl cursor-pointer  hover:shadow-2xl"
+      className=" flex flex-col w-[650px] gap-3 text-[#404214] box-border bg-[#eef0d3]  border-[4px] border-white hover:text-[#ffffff] hover:bg-[#bab977] p-3 shadow-xl rounded-xl cursor-pointer  hover:shadow-2xl"
     >
       <div className="flex justify-between shadow-md ">
         <h2 className="font-bold text-l text-[#bf550d]">
@@ -69,7 +70,7 @@ export const UserComponents:FC<UserProps> = ({user}) => {
 
         <div className="text-[12px] m-1">
           <p>
-            Age: {age} (<span className="italic text-[12px]">{birthDate}</span>)
+            Age: {age} (<span className="italic text-[12px]">{formattedBirthDate}</span>)
           </p>
           <p>Gender: {gender}</p>
           <p>Blood Group: {bloodGroup}</p>
@@ -113,15 +114,22 @@ export const UserComponents:FC<UserProps> = ({user}) => {
 
 
 
-      <div className="flex justify-between items-center shadow-md">
+
+        <div className="flex text-[12px] shadow-md mb-2">
         {bank ? <BankComponent bank={bank} /> : <p>No bank</p>}
-        <div className="w-1/3 text-[12px]">
-          <h5>Crypto:</h5>
-          <p>Coin: {crypto?.coin}</p>
-          <p>Wallet: {crypto?.wallet}</p>
-          <p>Network: {crypto?.network}</p>
+
+          <div><h5>Crypto:</h5>
+            <p>Coin: {crypto?.coin}</p>
+            <p>Wallet: {crypto?.wallet}</p>
+            <p>Network: {crypto?.network}</p></div>
+
+
+        <div className="flex items-end" >
+          <button
+            className=" flex justify-center items-center w-[150px] h-1.5 text-[#404214] box-border bg-[#eef0d3]  border-[2px] border-white hover:text-[#ffffff] hover:bg-[#bab977] p-7 shadow-xl rounded-xl cursor-pointer  hover:shadow-2xl"
+            onClick={onButtonClickNavigate}>CARTS 👉
+          </button>
         </div>
-        <button className=" flex justify-center items-center w-[150px] h-2 text-[#404214] box-border bg-[#eef0d3]  border-[2px] border-white hover:text-[#ffffff] hover:bg-[#bab977] p-7 shadow-xl rounded-xl cursor-pointer  hover:shadow-2xl" onClick={onButtonClickNavigate}>CARTS 👉</button>
       </div>
     </li>
   );

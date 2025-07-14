@@ -1,7 +1,8 @@
-import { ICart } from '../models/ICart.ts';
+import { ICart } from '../../models/ICart.ts';
 import { FC } from 'react';
+import { ProductsComponent } from './ProductsComponent.tsx';
 
-interface CartsProps {
+type CartsProps= {
   cart: ICart;
 }
 
@@ -12,19 +13,29 @@ const {   id,
   discountedTotal,
   userId,
   totalProducts,
+  products,
   totalQuantity }=cart
   return (
     <li
-      className="flex flex-col text-[10px] justify-between
-   shadow-l rounded-xl   text-[#404214] bg-[#bab977] p-1
-    cursor-pointer transition-transform duration-300 ease-in-out hover:shadow-2xl "
+      className="w-[300px] justify-between flex flex-col gap-1 text-[10px] text-[#404214] box-border bg-[#eef0d3]  border-[1px] border-white hover:text-[#ffffff] hover:bg-[#bab977] p-2 shadow-xl rounded-xl cursor-pointer  hover:shadow-2xl"
     >
-      <p>id: {id}</p>
-      <p>Total: {total}</p>
-      <p>User Id: {userId}</p>
-      <p>Discounted Total: {discountedTotal}</p>
-      <p>Total Quantity:{totalQuantity}</p>
-      <p>Total Products:{totalProducts}</p>
+      <div className="flex justify-between">
+        <p>id: {id}</p>
+        <p>User Id: {userId}</p>
+      </div>
+      <ProductsComponent products={products}/>
+      <div>
+        <div className="flex justify-between ">
+          <p>Total Products:{totalProducts}</p>
+          <p className=" text-[12px]">$: {total}</p>
+        </div>
+
+        <div className="flex justify-between shadow-md text-[14px] text-[#bf550d] ">
+          <p>Total Quantity:{totalQuantity}</p>
+          <p>Discounted $: {discountedTotal}</p>
+        </div>
+      </div>
+
     </li>
   );
 };
