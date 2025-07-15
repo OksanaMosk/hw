@@ -13,7 +13,7 @@ export const UsersComponents = () => {
 
   return (
     <ul className="flex w-2/3 flex-wrap justify-center self-center gap-10 mb-10 mt-10">
-      {users.map((user:IUser, id:number) => <UserComponents key={id} user={user}/>)}
+      {users.map((user:IUser) => <UserComponents key={user.id} user={user}/>)}
     </ul>
   );
 };

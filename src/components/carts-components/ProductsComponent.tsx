@@ -10,7 +10,7 @@ type ProductsProps={
 export const ProductsComponent:FC<ProductsProps> = ({products}) => {
   return (
     <ul>
-      {products.map((product:IProduct, id:number) => <ProductComponent key={id} product={product}></ProductComponent>)}
+      {products.map((product:IProduct) => <ProductComponent key={product.id} product={product}></ProductComponent>)}
     </ul>
   );
 };
