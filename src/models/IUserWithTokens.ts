@@ -9,3 +9,4 @@ export interface IUserWithTokens {
   accessToken: string;
   refreshToken: string;
 }
+//модель відовіді з токенами з бази даних для логування

@@ -6,3 +6,4 @@ export interface IBaseResponseProducts {
   skip: number;
   limit: number;
 }
+//модель відповіді з продуктами з бази даних

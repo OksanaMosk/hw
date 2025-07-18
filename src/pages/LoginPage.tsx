@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { login } from '../services/api_service.ts';
 
-
+//useEffect для зареєстрованих користувачів
 export const LoginPage = () => {
   useEffect(() => {
     login({

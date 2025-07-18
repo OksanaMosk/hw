@@ -3,7 +3,7 @@ import { allProducts, refresh } from '../../services/api_service.ts';
 import { IProduct } from '../../models/IProduct.ts';
 import { ProductComponent } from './ProductComponent.tsx';
 
-
+//це вже робили сто раз, можна не розписувати, але добавляємо рефреш, якшо пройшов час, перезавантажуємо
 export const ProductsComponent = () => {
   const[products, setProducts] = useState<IProduct[]>([])
   useEffect(() => {

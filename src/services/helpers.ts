@@ -7,3 +7,4 @@ export const retriveLocalStorage = <T> (key:string) => {
   const  parse = JSON.parse(object)
   return parse as T
 }
+// перевіряємо, якщо обєкт не пустий, то парсимо
