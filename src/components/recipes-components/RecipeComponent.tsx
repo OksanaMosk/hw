@@ -23,7 +23,7 @@ export const RecipeComponent:FC<RecipeProps> = ({ recipe }) => {
     mealType}=recipe
   return (
 
-    <li className="flex flex-col justify-between w-[650px] gap-2 text-[#404214] box-border bg-[#eef0d3] hover:text-white hover:bg-[#badd86] p-4 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl hover:border-[1px]">
+    <div className="flex flex-col justify-between w-[650px] gap-2 text-[#404214] box-border bg-[#eef0d3] hover:text-white hover:bg-[#badd86] p-4 shadow-xl rounded-xl cursor-pointer hover:shadow-2xl hover:border-[1px]">
       <div className="flex justify-between w-full">
         <h3  className=" text-2xl font-bold">{name}</h3>
         <div>
@@ -77,6 +77,6 @@ export const RecipeComponent:FC<RecipeProps> = ({ recipe }) => {
 
       </div>
 
-    </li>
+    </div>
   )
 };
