@@ -17,20 +17,6 @@ export const Menu = () => {
       </li>
       <li>
         <NavLink
-          to="/users/1"
-          className={({ isActive }) =>
-            isActive
-              ? 'text-lime-700 underline'
-              : 'text-[#404214] hover:text-lime-600'
-          }
-        >
-        User 1
-        </NavLink>
-      </li>
-
-
-      <li>
-        <NavLink
           to="/posts"
           className={({ isActive }) =>
             isActive
@@ -38,7 +24,35 @@ export const Menu = () => {
               : 'text-[#404214] hover:text-lime-600'
           }
         >
+
           Posts
+        </NavLink>
+      </li>
+
+
+      <li>
+        <NavLink
+          to="/comments"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-lime-700 underline'
+              : 'text-[#404214] hover:text-lime-600'
+          }
+        >
+          Comments
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
+          to="/complex"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-lime-700 underline'
+              : 'text-[#404214] hover:text-lime-600'
+          }
+        >
+        Complex
         </NavLink>
       </li>
     </ul>
