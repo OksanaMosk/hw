@@ -1,7 +1,7 @@
 import {FC, useEffect, useState} from 'react';
-import {loadPosts} from '../services/api_service_jsonplaceholder.ts';
-import {IPostJsonModel} from "../models/PostJsonModel.ts";
-import {PostJsonplaceholderComponent} from './PostJsonplaceholderComponent.tsx'
+import {loadPosts} from '../../services/posts-services/posts_jsonplaceholder.ts';
+import {IPostJsonModel} from "../../models/post-models/PostJsonModel.ts";
+import {PostJsonplaceholderComponent} from '../post-components/PostJsonplaceholderComponent.tsx'
 
 export const PostsJsonplaceholderComponent: FC = () => {
     const [posts, setPosts] = useState<IPostJsonModel[]>([]);

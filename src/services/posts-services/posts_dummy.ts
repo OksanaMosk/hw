@@ -1,5 +1,5 @@
 
-import {IPostDummyModel} from "../models/PostDummyModel.ts";
+import {IPostDummyModel} from "../../models/post-models/PostDummyModel.ts";
 
 const endpoint_dummy=import.meta.env.VITE_API_BASE_URL_D
 

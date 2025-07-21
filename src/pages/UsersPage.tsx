@@ -5,7 +5,7 @@ export const UsersPage = () => {
         <div className="flex flex-col">
 
             <div className="w-[15vw] bg-lime-100 p-4 shadow-md">
-                <ul className="flex flex-col gap-6 text-lg text-xl font-bold">
+                <ul className="flex flex-col gap-6 text-xl font-bold">
                     <li className="w-full shadow-xl">
                         <NavLink
                             to="jsonplaceholder"

@@ -1,7 +1,7 @@
 import {FC, useEffect, useState} from 'react';
-import { IUserJsonModel } from '../models/UserJsonModel.ts';
-import { loadUsers } from '../services/api_service_jsonplaceholder.ts';
-import {UserJsonplaceholderComponent} from "./UserJsonplaceholderComponent.tsx";
+import { IUserJsonModel } from '../../models/user-models/UserJsonModel.ts';
+import { loadUsers } from '../../services/users-services/users_jsonplaceholder.ts';
+import {UserJsonplaceholderComponent} from "../user-components/UserJsonplaceholderComponent.tsx";
 
 export const UsersJsonplaceholderComponent:FC = () => {
     const[users, setUsers]=useState<IUserJsonModel[]>([])

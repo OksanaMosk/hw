@@ -1,4 +1,4 @@
-import {IUserJsonModel} from "../models/UserJsonModel.ts";
+import {IUserJsonModel} from "../../models/user-models/UserJsonModel.ts";
 import {FC} from "react";
 
 type UserProps={

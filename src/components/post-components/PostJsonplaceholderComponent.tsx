@@ -1,4 +1,4 @@
-import {IPostJsonModel} from "../models/PostJsonModel.ts";
+import {IPostJsonModel} from "../../models/post-models/PostJsonModel.ts";
 import {FC} from "react";
 
 type PostJsonplaceholderComponentsProps ={

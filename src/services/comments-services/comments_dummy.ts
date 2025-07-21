@@ -1,4 +1,4 @@
-import {ICommentDummyModel} from "../models/CommentDummyModel.ts";
+import {ICommentDummyModel} from "../../models/comment-models/CommentDummyModel.ts";
 
 const endpoint_dummy=import.meta.env.VITE_API_BASE_URL_D
 

@@ -1,4 +1,4 @@
-import {ICommentJsonModel} from "../models/CommentJsonModel.ts";
+import {ICommentJsonModel} from "../../models/comment-models/CommentJsonModel.ts";
 import {FC} from "react";
 
 type CommentJsonplaceholderComponentProps = {

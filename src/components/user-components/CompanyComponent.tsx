@@ -1,5 +1,5 @@
 import { FC } from "react";
-import {ICompany} from "../models/UserDummyModel.ts";
+import {ICompany} from "../../models/user-models/UserDummyModel.ts";
 
 type CompanyBlockProps = {
     company: ICompany;

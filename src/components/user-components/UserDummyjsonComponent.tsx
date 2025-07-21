@@ -1,4 +1,4 @@
-import {IUserDummyModel } from '../models/UserDummyModel.ts';
+import {IUserDummyModel } from '../../models/user-models/UserDummyModel.ts';
 import { FC } from 'react';
 import {CompanyComponent} from "./CompanyComponent.tsx";
 import {BankComponent} from "./BankComponent.tsx";

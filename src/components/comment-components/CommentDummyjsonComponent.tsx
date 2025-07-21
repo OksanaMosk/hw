@@ -1,4 +1,4 @@
-import { ICommentDummyModel} from '../models/CommentDummyModel.ts';
+import { ICommentDummyModel} from '../../models/comment-models/CommentDummyModel.ts';
 import { FC } from 'react';
 
 type CommentJsonplaceholderComponentProps = {

@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
-import {PostDummyjsonComponents} from "./PostDummyjsonComponent.tsx";
-import {loadPostsDummy} from "../services/api_service_dummy.ts";
-import {IPostDummyModel} from "../models/PostDummyModel.ts";
+import {PostDummyjsonComponents} from "../post-components/PostDummyjsonComponent.tsx";
+import {loadPostsDummy} from "../../services/posts-services/posts_dummy.ts";
+import {IPostDummyModel} from "../../models/post-models/PostDummyModel.ts";
 
 
 export const PostsDummyjsonComponent = () => {

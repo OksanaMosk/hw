@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { IBank } from "../models/UserDummyModel.ts";
+import { IBank } from "../../models/user-models/UserDummyModel.ts";
 
 type BankProps = {
     bank: IBank | null | undefined;

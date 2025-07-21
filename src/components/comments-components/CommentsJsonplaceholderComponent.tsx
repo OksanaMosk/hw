@@ -1,7 +1,7 @@
 import {FC, useEffect, useState} from 'react';
-import { ICommentJsonModel } from '../models/CommentJsonModel.ts';
-import { loadComments } from '../services/api_service_jsonplaceholder.ts';
-import {CommentJsonplaceholderComponent} from './CommentJsonplaceholderComponent.tsx'
+import { ICommentJsonModel } from '../../models/comment-models/CommentJsonModel.ts';
+import { loadComments } from '../../services/comments-services/comments_jsonplaceholder.ts';
+import {CommentJsonplaceholderComponent} from '../comment-components/CommentJsonplaceholderComponent.tsx'
 
 export const CommentsJsonplaceholderComponent:FC = () => {
     const[comments, setComments]=useState<ICommentJsonModel[]>([])

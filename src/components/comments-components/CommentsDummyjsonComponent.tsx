@@ -1,7 +1,7 @@
 import {FC, useEffect, useState} from "react";
-import {ICommentDummyModel} from "../../comments/models/CommentDummyModel.ts";
-import {CommentDummyjsonComponents} from "./CommentDummyjsonComponent.tsx";
-import {loadCommentsDummy} from "../services/api_service_dummy.ts";
+import {ICommentDummyModel} from "../../models/comment-models/CommentDummyModel.ts";
+import {CommentDummyjsonComponents} from "../comment-components/CommentDummyjsonComponent.tsx";
+import {loadCommentsDummy} from "../../services/comments-services/comments_dummy.ts";
 
 
 

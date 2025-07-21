@@ -1,4 +1,4 @@
-import {IPostDummyModel} from "../models/PostDummyModel.ts";
+import {IPostDummyModel} from "../../models/post-models/PostDummyModel.ts";
 
 import {FC} from "react";
 

@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 
-import {IUserDummyModel} from "../models/UserDummyModel.ts";
-import {UserDummyjsonComponent} from "./UserDummyjsonComponent.tsx";
-import { loadUsersDummy } from '../services/api_service_dummy.ts';
+import {IUserDummyModel} from "../../models/user-models/UserDummyModel.ts";
+import {UserDummyjsonComponent} from "../user-components/UserDummyjsonComponent.tsx";
+import { loadUsersDummy } from '../../services/users-services/users_dummy.ts';
 
 
 export const UsersDummyjsonComponent = () => {

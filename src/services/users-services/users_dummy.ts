@@ -1,5 +1,5 @@
 
-import {IUserDummyModel} from "../models/UserDummyModel.ts";
+import {IUserDummyModel} from "../../models/user-models/UserDummyModel.ts";
 
 const endpoint_dummy=import.meta.env.VITE_API_BASE_URL_D
 
