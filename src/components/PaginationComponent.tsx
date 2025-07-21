@@ -1,9 +1,16 @@
 import { useSearchParams } from 'react-router-dom';
+import { FC } from 'react';
 
-export const PaginationComponent = () => {
+
+type PaginationProps = {
+  limit: number;
+  total: number;
+}
+
+export const PaginationComponent:FC<PaginationProps> = ({limit,total}) => {
   const [searchParams, setSearchParams] = useSearchParams({ page: '1' });
   let currentPage = Number(searchParams.get('page') || '1');
-
+let lastPage = Math.ceil(total / limit);
   return (
     <>
       {currentPage > 1 && (
@@ -16,10 +23,9 @@ export const PaginationComponent = () => {
           Prev
         </button>
       )}
-      {/*Не могла обробити, щоб запити наперед знали, чи буде наступна порція через infinity,*/}
-      {/*кнопка некст щезала тільки на 8 сторінці, тому повидаляла total limit і вліпила з нервів 7*/}
 
-      {currentPage < 7 && (
+
+      {currentPage < lastPage && (
         <button
           onClick={() => {
             setSearchParams({ page: (currentPage + 1).toString() });
